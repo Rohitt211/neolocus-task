@@ -23,7 +23,7 @@ export default function GeneratedDesign() {
     };
 
     axios
-      .post("https://neolocus.xyz/endpoint_integration", data, {
+      .post(process.env.REACT_APP_BASE_URL, data, {
         headers: headers,
       })
       .then((res) => {
@@ -33,7 +33,6 @@ export default function GeneratedDesign() {
         console.log(err);
       });
   };
-  let img = "/theme_image.png";
 
   useEffect(() => {
     generateDesignR();
