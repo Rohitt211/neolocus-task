@@ -1,0 +1,34 @@
+.color_container_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.color_container_first_element {
+  height: 100px;
+  flex-grow: 1;
+  background: #fff0cd;
+  cursor: pointer;
+}
+
+.color_container_second_element {
+  height: 100px;
+  flex-grow: 1;
+  background: #808080;
+  cursor: pointer;
+}
+
+.color_container_third_element {
+  height: 100px;
+  flex-grow: 1;
+  background: #808080;
+  cursor: pointer;
+}
+.color_container_fourth_element {
+  height: 100px;
+  flex-grow: 1;
+  background: #a35656;
+  cursor: pointer;
+}

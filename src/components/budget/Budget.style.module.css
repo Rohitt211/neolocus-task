@@ -1,0 +1,21 @@
+.budget_container_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.budget_single_element {
+  padding-top: 30px;
+  text-align: center;
+  flex-grow: 1;
+  height: 50px;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.budget_single_row {
+  display: flex;
+  gap: 20px;
+}

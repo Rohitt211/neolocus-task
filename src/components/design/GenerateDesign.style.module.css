@@ -1,0 +1,81 @@
+.generateDesignWrapper {
+  display: flex;
+  margin-top: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: "auto";
+}
+
+.addFurnitureButton {
+  display: inline-block;
+  background: white;
+
+  padding: 10px;
+  border: none;
+  width: 80%;
+  border-radius: 50px;
+  color: #c98e42;
+  margin-top: 10px;
+  border: 2px solid #c98e42;
+  border-radius: 50px;
+  font-size: 20px;
+  flex-grow: 1;
+  cursor: "pointer";
+}
+.redesingButton {
+  display: inline-block;
+  background: #c98e42;
+
+  padding: 10px;
+  border: none;
+  width: 80%;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  flex-grow: 1;
+  cursor: "pointer";
+}
+
+.second_container {
+  flex-grow: 8;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.inside_container {
+  border: 2px solid #dbdbdb;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .generateDesignWrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .inside_container {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .generic_image {
+    width: 90%;
+  }
+}

@@ -1,0 +1,42 @@
+.home_wrapper {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent_image_container {
+  display: inline-block;
+  position: relative;
+}
+
+.first_camera_image_container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.second_camera_image_container {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+}
+.third_camera_image_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}
+.fourth_camera_image_container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .background_image {
+    width: 100%;
+  }
+}

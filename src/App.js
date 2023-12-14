@@ -6,9 +6,10 @@ import {
   Navigate,
 } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
-import Form from "./components/Form";
-import Navbar from "./components/Navbar";
+import Home from "./components/home/Home";
+import Form from "./components/form/Form";
+import Navbar from "./components/navbar/Navbar";
+import GeneratedDesign from "./components/design/GeneratedDesign";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/response" element={<GeneratedDesign />} />
       </Routes>
     </Router>
   );

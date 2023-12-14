@@ -1,0 +1,12 @@
+.navbar_wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.navbar_second_wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 50px;
+}

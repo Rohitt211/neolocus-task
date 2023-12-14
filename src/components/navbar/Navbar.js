@@ -6,16 +6,7 @@ export default function Navbar() {
       <div>
         <img src="/image_logo.png" />
       </div>
-      <div
-        style={{
-          flexGrow: 1,
-          display: "flex",
-          justifyContent: "end",
-          alignItems: "center",
-          gap: "20px",
-          paddingRight: "50px",
-        }}
-      >
+      <div className={Styles.navbar_second_wrapper}>
         <span>Floor Plan</span>
         <span>Favourites</span>
       </div>

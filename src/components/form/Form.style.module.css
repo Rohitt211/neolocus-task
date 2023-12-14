@@ -1,0 +1,60 @@
+.form_wrapper {
+  display: flex;
+  margin-top: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.element_list_container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+.single_element {
+  border: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+.single_element_inside_element {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dropdown_icon {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.single_element_second {
+  border: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.color_open_inside_element {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.single_element_third {
+  border: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .form_wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .theme_image {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
