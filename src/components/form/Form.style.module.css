@@ -47,6 +47,21 @@
   border-radius: 8px;
   margin-top: 20px;
 }
+.generate_design_button {
+  display: inline-block;
+  padding: 20px;
+  border: none;
+  width: 80%;
+  border-radius: 50px;
+  color: white;
+  margin-top: 20px;
+}
+.color_container_wrapper{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+}
+
 @media (max-width: 767px) {
   .form_wrapper {
     flex-direction: column;

@@ -6,27 +6,27 @@
   padding-right: 20px;
 }
 
-.color_container_first_element {
+.color_container_0 {
   height: 100px;
   flex-grow: 1;
   background: #fff0cd;
   cursor: pointer;
 }
 
-.color_container_second_element {
+.color_container_1 {
   height: 100px;
   flex-grow: 1;
   background: #808080;
   cursor: pointer;
 }
 
-.color_container_third_element {
+.color_container_2 {
   height: 100px;
   flex-grow: 1;
   background: #808080;
   cursor: pointer;
 }
-.color_container_fourth_element {
+.color_container_3 {
   height: 100px;
   flex-grow: 1;
   background: #a35656;

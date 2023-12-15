@@ -1,11 +1,4 @@
-import logo from "./logo.svg";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Form from "./components/form/Form";
 import Navbar from "./components/navbar/Navbar";

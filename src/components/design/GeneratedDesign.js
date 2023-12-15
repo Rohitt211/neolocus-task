@@ -3,6 +3,7 @@ import axios from "axios";
 import Style from "./GenerateDesign.style.module.css";
 export default function GeneratedDesign() {
   const [designData, setDesignData] = useState(null);
+  const handImageData = [0, 1, 2];
   const generateDesignR = () => {
     const style = "modern";
     const pic_id = "room4";
@@ -41,47 +42,26 @@ export default function GeneratedDesign() {
     <>
       {designData ? (
         <div className={Style.generateDesignWrapper}>
-          <div
-            style={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
-          >
+          <div className={Style.second_wrapper}>
             <div style={{ position: "relative" }}>
               <img
-                width="100%"
-                height="500px"
                 className={Style.generic_image}
                 src={`data:image/png;base64, ${designData?.output_image}`}
               />
-              <img
-                style={{ position: "absolute", top: "80%", left: "10%" }}
-                src="/hand-popup.png"
-              />
-              <img
-                style={{ position: "absolute", top: "70%", left: "40%" }}
-                src="/hand-popup.png"
-              />
-              <img
-                style={{ position: "absolute", top: "80%", right: "10%" }}
-                src="/hand-popup.png"
-              />
+              {handImageData.map((ele, index) => {
+                return (
+                  <img
+                    className={`${Style[`hand_image_${index}`]}`}
+                    src="/hand-popup.png"
+                  />
+                );
+              })}
             </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
+            <div className={Style.inner_container}>
               <p style={{ flexGrow: 1 }}>
                 Total Price <span style={{ color: "green" }}>$750</span>
               </p>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  flexGrow: 1,
-                  gap: 4,
-                }}
-              >
+              <div className={Style.inner_container_2}>
                 <button className={Style.addFurnitureButton}>
                   Add furniture
                 </button>
@@ -91,11 +71,7 @@ export default function GeneratedDesign() {
           </div>
           <div className={Style.second_container}>
             <div className={Style.inside_container}>
-              <img
-                className={Style.blink_me}
-                src="/hand-icon.png"
-                style={{ cursor: "pointer" }}
-              />
+              <img className={Style.blink_me} src="/hand-icon.png" />
               <p style={{ fontSize: "30px" }}>
                 Click on any item to see details{" "}
               </p>
@@ -103,9 +79,7 @@ export default function GeneratedDesign() {
           </div>
         </div>
       ) : (
-        <h1 style={{ marginTop: "50px", textAlign: "center" }}>
-          please wait...
-        </h1>
+        <h1 className={Style.please_wait_heading}>please wait...</h1>
       )}
     </>
   );

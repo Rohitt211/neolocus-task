@@ -10,29 +10,37 @@
   position: relative;
 }
 
-.first_camera_image_container {
+.camera_image_container_0 {
   position: absolute;
   top: 20px;
   left: 20px;
   cursor: pointer;
 }
-.second_camera_image_container {
+.camera_image_container_1 {
   position: absolute;
   top: 50%;
   left: 20px;
   cursor: pointer;
 }
-.third_camera_image_container {
+.camera_image_container_2{
   position: absolute;
   top: 50%;
   left: 50%;
   cursor: pointer;
 }
-.fourth_camera_image_container {
+.camera_image_container_3 {
   position: absolute;
   top: 20px;
   left: 50%;
   cursor: pointer;
+}
+.room_heading{
+  text-align: center; 
+  font-size: 50px
+}
+.room_second_heading{
+  text-align: center;
+   font-size: 30px;
 }
 
 @media (max-width: 767px) {

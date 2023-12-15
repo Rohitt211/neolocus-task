@@ -36,7 +36,8 @@ export default function Form() {
                 setStyleOpen(!styleOpen);
               }}
             >
-              <span>{currentStyle}</span> <DropDownSvg />
+              <span>{currentStyle}</span>
+              <DropDownSvg />
             </div>
           </div>
           <div>
@@ -56,11 +57,9 @@ export default function Form() {
               }}
             >
               <div
+                className={Style.color_container_wrapper}
                 style={{
-                  display: "inline-block",
                   background: currentColor,
-                  width: "80px",
-                  height: "30px",
                 }}
               ></div>{" "}
               <DropDownSvg />
@@ -82,7 +81,8 @@ export default function Form() {
                 setBugetOpen(!bugetOpen);
               }}
             >
-              <span>{currentBuget}</span> <DropDownSvg />
+              <span>{currentBuget}</span>
+              <DropDownSvg />
             </div>
           </div>
           <div>
@@ -95,18 +95,12 @@ export default function Form() {
           <button
             disabled={!currentBuget || !currentColor || !currentStyle}
             onClick={() => generateDesign()}
+            className={Style.generate_design_button}
             style={{
-              display: "inline-block",
               background:
                 !currentBuget || !currentColor || !currentStyle
                   ? "#D9D9D9"
                   : "#C98E42",
-              padding: "20px",
-              border: "none",
-              width: "80%",
-              borderRadius: "50px",
-              color: "white",
-              marginTop: "20px",
             }}
           >
             Generate design
